@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #1c9f66;
+    --accent-color: #3498db;
+    --bg-color: #ecf0f1;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --soap-color: #e74c3c; /* Rojo para protocolos estrictos */
+    --rest-color: #27ae60; /* Verde para modernos */
+    --std-color: #f39c12;  /* Naranja para estándares */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Estilizado */
+.main-header {
+    background: linear-gradient(135deg, var(--primary-color), #34495e);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.main-header h1 { margin: 0; font-size: 2.5rem; }
+.subtitle { opacity: 0.9; margin-top: 5px; font-weight: 300; }
+.student-info { font-size: 0.8rem; opacity: 0.7; margin-bottom: 20px; }
+
+/* Buscador */
+.search-container {
+    margin-top: 20px;
+}
+
+#buscador {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    outline: none;
+    transition: transform 0.3s;
+}
+
+#buscador:focus {
+    transform: scale(1.02);
+}
+
+#contador-resultados {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+/* Grid de Tarjetas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Diseño de Tarjeta Pro */
+.tarjeta {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.definicion { font-size: 0.95rem; margin-bottom: 15px; }
+
+.seccion-extra {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: auto; /* Empuja esto al fondo */
+    font-size: 0.85rem;
+}
+
+.relacion {
+    color: #d35400;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--accent-color);
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 40px;
+}
